@@ -59,7 +59,7 @@ public abstract class MetadataFactory {
 
     public abstract Optional<TableMetadata> tableOrViewMetadata(final String keyspaceName, final String tableOrViewName);
 
-    public abstract Set<String> keyspaces();
+    public abstract Sets.SetView<String> keyspaces();
 
     public abstract Optional<EndpointMetadata> endpointMetadata(final InetAddress endpoint);
 

@@ -60,7 +60,7 @@ public class InternalMetadataFactory extends MetadataFactory {
     }
 
     @Override
-    public Set<String> keyspaces() {
+    public Sets.SetView<String> keyspaces() {
         return Schema.instance.getKeyspaces();
     }
 

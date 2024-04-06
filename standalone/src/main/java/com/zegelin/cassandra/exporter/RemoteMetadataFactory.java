@@ -57,8 +57,10 @@ public class RemoteMetadataFactory extends MetadataFactory {
     }
 
     @Override
-    public Set<String> keyspaces() {
-        return cluster.getMetadata().getKeyspaces().stream().map(KeyspaceMetadata::getName).collect(Collectors.toSet());
+    public Sets.SetView<String> keyspaces() {
+        Set<String> keyspacesSet = cluster.getMetadata().getKeyspaces().stream().map(KeyspaceMetadata::getName).collect(Collectors.toSet());
+        Set<String> emptySet = Collections.emptySet();
+        return Sets.difference(keyspacesSet, emptySet);
     }
 
     @Override
