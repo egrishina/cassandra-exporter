@@ -4,10 +4,11 @@
 
 *Project Status: beta*
 
-This fork should fix the exporter for cassandra version 4.1.2. 
+This fork should fix the exporter for cassandra version 4.1.4. 
 Solved issues:
 * https://github.com/instaclustr/cassandra-exporter/issues/83
 * https://github.com/instaclustr/cassandra-exporter/issues/112
+* https://github.com/instaclustr/cassandra-exporter/issues/118
 
 # Note - The Cassandra-Exporter tool does not support all versions of Cassandra, see the compatibility section for more details on supported versions.
 
@@ -44,7 +45,7 @@ For example, the following PromQL query will return an estimate of the number of
 
 | Cassandra Version                       | Compatible Exporter Version |
 |-----------------------------------------|-----------------------------|
-| Apache Cassandra 4.1.2                  | 0.9.13                      |
+| Apache Cassandra 4.1.4                  | 0.9.13                      |
 | Apache Cassandra 4.x                    | 0.9.12                      |
 | Apache Cassandra 3.0.17, 3.11.2, 3.11.3 | 0.9.11                      |
 
